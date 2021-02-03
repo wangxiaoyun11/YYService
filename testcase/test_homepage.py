@@ -1,6 +1,4 @@
-from pageobject import login
-from pageobject.HomePage import homepage
-import json
+from api.HomePage import homepage
 import urllib3
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
