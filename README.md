@@ -2,13 +2,25 @@
 Wangxy Service
 
 api 接口封装层 把接口封装成python接口
-common  各种工具类
-core  requests请求方法封装，关键字返回结果类
+common  操作类
+{handle_apirequest 处理接口请求
+ handle_comparators 处理断言
+ handle_db 处理数据库操作
+ handle_excelconfig 处理excel配置
+ handle_exceldats  处理excel数据
+ handle_getexceldata  读取excel数据
+ handle_init 读取配置文件
+ handle_json 处理json文件
+ handle_log  处理日志文件
+ handle_yaml 处理yaml文件
+}
 config  配置文件
-data  测试数据文件管理
-operation  关键字封装层  eg：把多个python接口封装成关键字
-pytest.ini  pytest配置文件
-requirements.txt  相关依赖包文件
-testcase  测试用例
+test_data  测试数据类
+base 基础类  base_request封装get/post请求
+test_case 测试用例类
+reports  测试报告
+log 日志 
+requirements.txt  项目依赖包配置
+test_main 主运行
 
 

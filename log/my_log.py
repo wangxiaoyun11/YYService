@@ -1,16 +1,16 @@
-import logging
+import log
 import os
 import time
 
 LEVELS = {
-    'debug': logging.DEBUG,
-    'info': logging.INFO,
-    'warning': logging.WARNING,
-    'error': logging.ERROR,
-    'critical': logging.CRITICAL
+    'debug': log.DEBUG,
+    'info': log.INFO,
+    'warning': log.WARNING,
+    'error': log.ERROR,
+    'critical': log.CRITICAL
 }
 
-logger = logging.getLogger()
+logger = log.getLogger()
 level = 'default'
 
 
@@ -43,12 +43,12 @@ class MyLog:
     path = os.path.dirname(os.path.abspath('.'))
     log_file = path + '/log/log_file.log'
     err_file = path + '/log/err_file.log'
-    logger.setLevel(LEVELS.get(level, logging.NOTSET))
+    logger.setLevel(LEVELS.get(level, log.NOTSET))
     create_file(log_file)
     create_file(err_file)
     date = '%Y-%m-%d %H:%M:%S'
-    handler = logging.FileHandler(log_file, encoding='utf-8')
-    err_handler = logging.FileHandler(err_file, encoding='utf-8')
+    handler = log.FileHandler(log_file, encoding='utf-8')
+    err_handler = log.FileHandler(err_file, encoding='utf-8')
 
     @staticmethod
     def debug(log_meg):

@@ -1,12 +1,12 @@
 import urllib3
-import json
-from core.rest_client import BasicRequest
+from base.base_request import BasicRequest
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 
 class EqualSales(BasicRequest):
-    def __init__(self):
-        super(EqualSales, self).__init__()
+    def __init__(self,api_root_url):
+        # super(EqualSales, self).__init__()
+        super().__init__(self, api_root_url)
 
     def add(self,user):
         url = 'https://yesfp.yonyoucloud.com/output-tax/equivalent-sale/add'

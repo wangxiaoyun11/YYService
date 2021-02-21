@@ -1,7 +1,7 @@
 # coding=utf-8
 import requests
 import json
-from api import login
+from apipageobject import login
 
 
 class BasicRequest(object):
@@ -35,7 +35,7 @@ class BasicRequest(object):
             return self.session.delete(url=url, **kwargs)
         if method == "PUT":
             if json:
-                #  PUT 和 PATCH # json 参数直接自动传 json  #传 data 参数就需要传 json
+                #  PUT 和 PATCH # json 参数直接自动传 json  #传 test_data 参数就需要传 json
                 data = json.dumps(json)
             return self.session.put(url=url, data=data, **kwargs)
         if method == "PATCH":

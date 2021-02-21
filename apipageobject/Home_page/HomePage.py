@@ -1,8 +1,6 @@
-from api import login
 import urllib3
-import json
 
-from core.rest_client import BasicRequest
+from base.base_request import BasicRequest
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
@@ -22,6 +20,6 @@ class Homepage(BasicRequest):
         headers = {
             'content-type': "application/json"
         }
-        request = self.session.post(url=url, json=payload, headers=headers,params=querystring)
+        request = self.post(url=url, json=payload, headers=headers,params=querystring)
         return request
 

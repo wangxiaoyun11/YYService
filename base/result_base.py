@@ -1,4 +1,4 @@
-from logging import my_log
+from log import my_log
 import json
 
 class AssertUtil:
