@@ -1,45 +1,38 @@
 # coding=utf-8
-import requests
-import json
+from common.handle_log import run_log as logger
 from apipageobject import login
-
+from common.read_config import ReadConfig
 
 class BasicRequest(object):
 
-    def __init__(self, api_root_url):
-        self.api_root_url = api_root_url
+    def __init__(self):
+        # READ = ReadConfig()
+        # self.api_root_url = READ.get_value(key='url',node='pre')
         self.session = login.test_login()
 
-    def get(self, url, **kwargs):
-        return self.request(url, "GET", **kwargs)
+    def send_get(self,url,data=None,header=None,cookie=None):
+        return self.session.get(url=url,params=data,headers=header,cookies=cookie)
 
-    def post(self, url, data=None, json=None, **kwargs):
-        return self.request(url, "POST", data, json, **kwargs)
+    def send_post(self,url,data,header=None,cookie=None,param=None):
+        return self.session.post(url=url,json=data,headers=header,cookies=cookie,params=param)
 
-    def put(self, url, data=None, **kwargs):
-        return self.request(url, "PUT", data, **kwargs)
+    def send_delete(self,url,data,header=None,cookie=None,param=None):
+        return self.session.delete(url=url,json=data,headers=header,cookies=cookie,params=param)
 
-    def delete(self, url, **kwargs):
-        return self.request(url, "DELETE", **kwargs)
-
-    def patch(self, url, data=None, **kwargs):
-        return self.request(url, "PATCH", data, **kwargs)
-
-    def request(self, url, method, json=None, headers=None,params=None,**kwargs):
-        url = self.api_root_url + url
-        if method == "GET":
-            return self.session.get(url=url,params=params,**kwargs)
-        if method == "POST":
-            return self.session.post(url=url, json=json,headers=headers,**kwargs)
-        if method == "DELETE":
-            return self.session.delete(url=url, **kwargs)
-        if method == "PUT":
-            if json:
-                #  PUT 和 PATCH # json 参数直接自动传 json  #传 test_data 参数就需要传 json
-                data = json.dumps(json)
-            return self.session.put(url=url, data=data, **kwargs)
-        if method == "PATCH":
-            if json:
-                data = json.dumps(json)
-            return self.session.patch(url=url, data=data, **kwargs)
+    def run_main(self, method, url, data, header, cookie=None,params=None):
+        try:
+            if method.upper() == 'GET':
+                result = self.send_get(url, data, header, cookie)
+                logger.info('get请求')
+                return result
+            elif method.upper() == 'POST':
+                result = self.send_post(url, data, header, cookie, params)
+                logger.info('post请求')
+                return result
+            elif method.upper() == 'DELETE':
+                result = self.send_delete(url, data, header, cookie, params)
+                logger.info('delete请求')
+                return result
+        except Exception as e:
+            logger.exception('请求主函数调用失败：{}'.format(e))
 

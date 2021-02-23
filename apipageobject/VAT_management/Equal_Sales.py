@@ -4,12 +4,12 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 
 class EqualSales(BasicRequest):
-    def __init__(self,api_root_url):
-        # super(EqualSales, self).__init__()
-        super().__init__(self, api_root_url)
+    def __init__(self):
+        super(EqualSales, self).__init__()
+
 
     def add(self,user):
-        url = 'https://yesfp.yonyoucloud.com/output-tax/equivalent-sale/add'
+        url = 'output-tax/equivalent-sale/add'
         payload = {"orgid":"1054","abstr":user,"taxMethod":"1","saleClassification":"1","je":"1090","se":"185.30","jshj":"1275.30","billdate":"2021-02-04","slv":"0.17"}
         headers = {
             'content-type': "application/json"
@@ -18,7 +18,7 @@ class EqualSales(BasicRequest):
         return request
 
     def query(self,user):
-        url = 'https://yesfp.yonyoucloud.com/output-tax/equivalent-sale/query'
+        url = 'output-tax/equivalent-sale/query'
         querystring = {"pagenum": "1", "pagesize": "15", "sortby":"billdate", "order":"desc"}
         payload ={"keyword":user}
         headers = {
@@ -28,7 +28,7 @@ class EqualSales(BasicRequest):
         return request
 
     def deletes(self,id):
-        url = 'https://yesfp.yonyoucloud.com/output-tax/equivalent-sale/delete'
+        url = 'output-tax/equivalent-sale/delete'
         querystring = {"id": id, "_": "1612407504529"}
         headers = {
             'content-type': "application/json"

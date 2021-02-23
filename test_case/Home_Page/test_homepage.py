@@ -1,5 +1,5 @@
 import pytest
-from apipageobject.Home_page.HomePage import Homepage
+from apipageobject.Home_Page.HomePage import Homepage
 import urllib3
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
