@@ -1,0 +1,4 @@
+[2021-02-24 10:11:19.144939] [INFO] [handle_log.py] [<module>] [56] test
+[2021-02-24 10:12:24.461233] [INFO] [base_request.py] [run_main] [30] post请求
+[2021-02-24 10:12:25.268835] [INFO] [base_request.py] [run_main] [30] post请求
+[2021-02-24 10:12:26.241459] [INFO] [base_request.py] [run_main] [30] post请求
