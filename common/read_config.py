@@ -7,10 +7,13 @@ os.path.realpath(README.md)  获取README.md文件的绝对路径
 os.path.split 切割路径分为 路径 和 read_config.py  
 '''
 
-# 获取当前路径
+# 期望日志存储的绝对路径
+path = 'D:\YYService\YYService'
 proDir = os.path.abspath(os.path.join(os.getcwd(), ".."))
-# 获取配置文件路径
-configPath = os.path.join(proDir, "config.ini")
+if proDir == path:
+    configPath = os.path.join(proDir, "config.ini")
+else:
+    configPath = os.path.join(path, "config.ini")
 
 class ReadConfig():
     def __init__(self):

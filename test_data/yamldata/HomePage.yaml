@@ -1,0 +1,10 @@
+query
+  querystring : {"pagenum": "1", "pagesize": "15"}
+  data : {"keyword":111}
+  headers : {'content-type': "application/json"}
+  url : input-tax/reimbursement-account/query
+
+
+
+
+

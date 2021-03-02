@@ -24,3 +24,4 @@ requirements.txt  项目依赖包配置
 test_main 主运行
 
 
+注意：test_data -yamldata-yaml文件名称必须和apipageobject-文件夹-文件名称 相同

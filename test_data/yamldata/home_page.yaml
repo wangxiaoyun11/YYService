@@ -1,8 +1,0 @@
-url:input-tax/reimbursement-account/query
-querystring:
-  "pagenum": "1"
-  "pagesize": "15"
-payload:
-  "keyword":user
-headers:
-  'content-type': "application/json"

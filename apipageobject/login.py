@@ -20,6 +20,7 @@ def test_login():
     ticket = re.findall('ticket=(.+?)"}', text)
     if response.status_code == 200:
         print("登录获取ticket成功")
+        print('ticket是：{}'.format(ticket))
 
     url1 = "https://yesfp.yonyoucloud.com/piaoeda-cloud/cas"
     querystring1 = {"ticket": ticket}
@@ -33,3 +34,4 @@ def test_login():
     if login_response.status_code == 200:
         print("登录成功")
     return session
+test_login()
