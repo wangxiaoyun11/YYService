@@ -1,0 +1,58 @@
+[2021-03-10 16:13:46.940003] [INFO] [read_config.py] [get_value] [28] 获取配置文件的值，node：pre,key：url, data：https://yesfp.yonyoucloud.com/
+[2021-03-10 16:25:35.988041] [INFO] [handle_yaml.py] [get_url] [50] 获取url数据
+[2021-03-10 16:25:35.992042] [INFO] [handle_yaml.py] [get_querystring] [23] 获取querystring数据
+[2021-03-10 16:25:35.995042] [INFO] [handle_yaml.py] [get_headers] [32] 获取headers数据
+[2021-03-10 16:25:35.998042] [INFO] [handle_yaml.py] [get_data] [41] 获取data数据
+[2021-03-10 16:25:36.209069] [INFO] [read_config.py] [get_value] [28] 获取配置文件的值，node：pre,key：url, data：https://yesfp.yonyoucloud.com/
+[2021-03-10 16:25:36.675628] [INFO] [base_request.py] [send_post] [24] 调用post接口
+[2021-03-10 16:34:41.373796] [INFO] [handle_yaml.py] [get_url] [50] 获取url数据
+[2021-03-10 16:34:41.377297] [INFO] [handle_yaml.py] [get_querystring] [23] 获取querystring数据
+[2021-03-10 16:34:41.379797] [INFO] [handle_yaml.py] [get_headers] [32] 获取headers数据
+[2021-03-10 16:34:41.382797] [INFO] [handle_yaml.py] [get_data] [41] 获取data数据
+[2021-03-10 16:34:41.385798] [INFO] [handle_yaml.py] [get_url] [50] 获取url数据
+[2021-03-10 16:34:41.388298] [INFO] [handle_yaml.py] [get_querystring] [23] 获取querystring数据
+[2021-03-10 16:34:41.391799] [INFO] [handle_yaml.py] [get_headers] [32] 获取headers数据
+[2021-03-10 16:34:41.395299] [ERROR] [handle_yaml.py] [get_value] [61] 读取yaml文件报错如下：'keyword'
+[2021-03-10 16:34:41.610826] [INFO] [read_config.py] [get_value] [28] 获取配置文件的值，node：pre,key：url, data：https://yesfp.yonyoucloud.com/
+[2021-03-10 16:34:42.300414] [INFO] [base_request.py] [send_post] [24] 调用post接口
+[2021-03-10 16:34:42.341919] [INFO] [base_request.py] [run_main] [44] post请求
+[2021-03-10 16:37:36.322512] [INFO] [handle_yaml.py] [get_url] [50] 获取url数据
+[2021-03-10 16:37:36.325512] [INFO] [handle_yaml.py] [get_querystring] [23] 获取querystring数据
+[2021-03-10 16:37:36.328513] [INFO] [handle_yaml.py] [get_headers] [32] 获取headers数据
+[2021-03-10 16:37:36.331513] [INFO] [handle_yaml.py] [get_data] [41] 获取data数据
+[2021-03-10 16:37:36.334513] [INFO] [handle_yaml.py] [get_url] [50] 获取url数据
+[2021-03-10 16:37:36.337014] [INFO] [handle_yaml.py] [get_querystring] [23] 获取querystring数据
+[2021-03-10 16:37:36.340014] [INFO] [handle_yaml.py] [get_headers] [32] 获取headers数据
+[2021-03-10 16:37:36.343015] [ERROR] [handle_yaml.py] [get_value] [61] 读取yaml文件报错如下：'keyword'
+[2021-03-10 16:37:36.576044] [INFO] [read_config.py] [get_value] [28] 获取配置文件的值，node：pre,key：url, data：https://yesfp.yonyoucloud.com/
+[2021-03-10 16:37:37.036103] [INFO] [base_request.py] [send_post] [24] 调用post接口
+[2021-03-10 16:37:37.148117] [INFO] [base_request.py] [run_main] [44] post请求
+[2021-03-10 16:37:47.151887] [INFO] [handle_yaml.py] [get_url] [50] 获取url数据
+[2021-03-10 16:37:47.155888] [INFO] [handle_yaml.py] [get_querystring] [23] 获取querystring数据
+[2021-03-10 16:37:47.158388] [INFO] [handle_yaml.py] [get_headers] [32] 获取headers数据
+[2021-03-10 16:37:47.160888] [INFO] [handle_yaml.py] [get_data] [41] 获取data数据
+[2021-03-10 16:37:47.163889] [INFO] [handle_yaml.py] [get_url] [50] 获取url数据
+[2021-03-10 16:37:47.166389] [INFO] [handle_yaml.py] [get_querystring] [23] 获取querystring数据
+[2021-03-10 16:37:47.169389] [INFO] [handle_yaml.py] [get_headers] [32] 获取headers数据
+[2021-03-10 16:37:47.171890] [ERROR] [handle_yaml.py] [get_value] [61] 读取yaml文件报错如下：'keyword'
+[2021-03-10 16:37:47.381916] [INFO] [read_config.py] [get_value] [28] 获取配置文件的值，node：pre,key：url, data：https://yesfp.yonyoucloud.com/
+[2021-03-10 16:37:47.851476] [INFO] [base_request.py] [send_post] [24] 调用post接口
+[2021-03-10 16:37:47.962990] [INFO] [base_request.py] [run_main] [44] post请求
+[2021-03-10 16:42:42.793929] [INFO] [handle_yaml.py] [get_url] [50] 获取url数据
+[2021-03-10 16:42:42.797429] [INFO] [handle_yaml.py] [get_querystring] [23] 获取querystring数据
+[2021-03-10 16:42:42.800430] [INFO] [handle_yaml.py] [get_headers] [32] 获取headers数据
+[2021-03-10 16:42:42.802930] [INFO] [handle_yaml.py] [get_data] [41] 获取data数据
+[2021-03-10 16:42:42.805430] [INFO] [handle_yaml.py] [get_url] [50] 获取url数据
+[2021-03-10 16:42:42.808431] [INFO] [handle_yaml.py] [get_querystring] [23] 获取querystring数据
+[2021-03-10 16:42:42.811431] [INFO] [handle_yaml.py] [get_headers] [32] 获取headers数据
+[2021-03-10 16:42:42.814431] [ERROR] [handle_yaml.py] [get_value] [61] 读取yaml文件报错如下：'keyword'
+[2021-03-10 16:42:42.817432] [INFO] [handle_yaml.py] [get_url] [50] 获取url数据
+[2021-03-10 16:42:42.819932] [INFO] [handle_yaml.py] [get_querystring] [23] 获取querystring数据
+[2021-03-10 16:42:42.822933] [INFO] [handle_yaml.py] [get_headers] [32] 获取headers数据
+[2021-03-10 16:42:42.825933] [ERROR] [handle_yaml.py] [get_value] [61] 读取yaml文件报错如下：'keyword2'
+[2021-03-10 16:42:43.034459] [INFO] [read_config.py] [get_value] [28] 获取配置文件的值，node：pre,key：url, data：https://yesfp.yonyoucloud.com/
+[2021-03-10 16:42:43.500519] [INFO] [base_request.py] [send_post] [24] 调用post接口
+[2021-03-10 16:42:43.606032] [INFO] [base_request.py] [run_main] [44] post请求
+[2021-03-10 16:42:43.615033] [INFO] [read_config.py] [get_value] [28] 获取配置文件的值，node：pre,key：url, data：https://yesfp.yonyoucloud.com/
+[2021-03-10 16:42:44.251614] [INFO] [base_request.py] [send_post] [24] 调用post接口
+[2021-03-10 16:42:44.373129] [INFO] [base_request.py] [run_main] [44] post请求

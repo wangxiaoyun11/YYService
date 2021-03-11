@@ -1,5 +1,6 @@
 import yaml
 import os
+from common.handle_log import run_log as logger
 
 class Read_Yaml():
     def __init__(self):
@@ -13,24 +14,49 @@ class Read_Yaml():
                 content = yaml.safe_load(f)
             return content
         except Exception as f:
-            print('读取yaml文件报错如下：{}'.format(f))
+            logger.exception('读取yaml文件报错如下：{}'.format(f))
 
     def get_querystring(self,**kwargs):
-        content = self.read_yaml()
-        querystring = content["querystring"]
-        return querystring
+        try:
+            content = self.read_yaml()
+            querystring = content["querystring"]
+            logger.info('获取querystring数据')
+            return querystring
+        except Exception as f:
+            logger.exception('读取yaml文件报错如下：{}'.format(f))
 
     def get_headers(self,**kwargs):
-        content = self.read_yaml()
-        headers = content["headers"]
-        return headers
+        try:
+            content = self.read_yaml()
+            headers = content["headers"]
+            logger.info('获取headers数据')
+            return headers
+        except Exception as f:
+            logger.exception('读取yaml文件报错如下：{}'.format(f))
 
     def get_data(self,**kwargs):
-        content = self.read_yaml()
-        data = content["data"]
-        return data
+        try:
+            content = self.read_yaml()
+            data = content["data"]
+            logger.info('获取data数据')
+            return data
+        except Exception as f:
+            logger.exception('读取yaml文件报错如下：{}'.format(f))
+
     def get_url(self,**kwargs):
-        content = self.read_yaml()
-        url = content["url"]
-        return url
+        try:
+            content = self.read_yaml()
+            url = content["url"]
+            logger.info('获取url数据')
+            return url
+        except Exception as f:
+            logger.exception('读取yaml文件报错如下：{}'.format(f))
+    def get_value(self,keyword,**kwargs):
+        try:
+            content = self.read_yaml()
+            value = content[keyword]
+            logger.info('获取value数据')
+            return value
+        except Exception as f:
+            logger.exception('读取yaml文件报错如下：{}'.format(f))
 

@@ -7,7 +7,7 @@ os.path.realpath(README.md)  获取README.md文件的绝对路径
 os.path.split 切割路径分为 路径 和 read_config.py  
 '''
 
-# 期望日志存储的绝对路径
+# 期望路径
 path = 'D:\YYService\YYService'
 proDir = os.path.abspath(os.path.join(os.getcwd(), ".."))
 if proDir == path:

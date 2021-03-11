@@ -9,8 +9,7 @@ class Homepage(BasicRequest):
     def __init__(self):
         super(Homepage, self).__init__()
 
-    def query(self, user):
-        url = "input-tax/reimbursement-account/query"
+    def query(self, user,url):
         querystring = {"pagenum": "1", "pagesize": "15"}
         data = {"keyword":user}
         headers = {
@@ -19,8 +18,8 @@ class Homepage(BasicRequest):
         request = self.run_main(method='post',url=url, data=data, header=headers,params=querystring)
         return request
 
-    def query2(self, url, querystring, data, headers):
-        url = self.api_root_url + url
+    def query2(self, url, querystring, user, headers):
+        data = {"keyword": user}
         request = self.run_main(method='post', url=url, data=data, header=headers, params=querystring)
         return request
 

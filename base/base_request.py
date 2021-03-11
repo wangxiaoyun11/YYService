@@ -12,13 +12,26 @@ class BasicRequest(object):
         self.session = login.test_login()
 
     def send_get(self,url,data=None,header=None,cookie=None):
-        return self.session.get(url=self.api_root_url+url,params=data,headers=header,cookies=cookie)
+        try:
+            logger.info('调用get接口')
+            return self.session.get(url=self.api_root_url+url,params=data,headers=header,cookies=cookie)
+
+        except Exception as e:
+            logger.exception('get接口调用失败，信息如下：'.format(e))
 
     def send_post(self,url,data,header=None,cookie=None,param=None):
-        return self.session.post(url=self.api_root_url+url,json=data,headers=header,cookies=cookie,params=param)
+        try:
+            logger.info('调用post接口')
+            return self.session.post(url=self.api_root_url+url,json=data,headers=header,cookies=cookie,params=param)
+        except Exception as e:
+            logger.exception('post接口调用失败，信息如下：'.format(e))
 
     def send_delete(self,url,data,header=None,cookie=None,param=None):
-        return self.session.delete(url=self.api_root_url+url,json=data,headers=header,cookies=cookie,params=param)
+        try:
+            logger.info('调用delete接口')
+            return self.session.delete(url=self.api_root_url+url,json=data,headers=header,cookies=cookie,params=param)
+        except Exception as e:
+            logger.exception('删除接口调用失败，信息如下：'.format(e))
 
     def run_main(self, method, url, data, header, cookie=None,params=None):
         try:
